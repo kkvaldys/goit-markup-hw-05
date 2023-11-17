@@ -489,6 +489,116 @@
           </ul>
         </div>
       </div>
+      <div class="box-subscribe">
+        <p class="subscribe-title">Subscribe</p>
+        <form class="subscribe-form" name="subscribe" autocomplete="off">
+          <label class="subscribe-label">
+            <input
+              class="subscribe-email"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="subscribe-btn" type="submit">
+            Subscribe
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-frame-3"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </footer>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">
+          <svg class="x-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <p class="contacts-title">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="contacts-form" name="contactsform" autocomplete="off">
+          <div class="contacts-list">
+            <label class="contacts-label" for="user-name">Name</label>
+            <div class="contacts-input-wrap">
+              <input
+                class="contacts-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                autofocus
+                required
+              />
+              <svg class="contacts-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="contacts-list">
+            <label class="contacts-label" for="user-phone">Phone</label>
+            <div class="contacts-input-wrap">
+              <input
+                class="contacts-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                maxlength="15"
+                required
+              />
+              <svg class="contacts-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="contacts-list">
+            <label class="contacts-label" for="user-email">Email</label>
+            <div class="contacts-input-wrap">
+              <input
+                class="contacts-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                required
+              />
+              <svg class="contacts-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="contacts-comment">
+            <label class="contacts-label" for="user-comment">Comment</label>
+            <textarea
+              class="contacts-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="contacts-checkbox">
+            <input
+              class="contacts-check visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              required
+            />
+            <label class="contacts-check-text" for="user-privacy">
+              <span class="checkbox-span">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="check-text" href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="contacts-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
