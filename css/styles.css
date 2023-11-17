@@ -652,6 +652,10 @@ img {
 
 /* ---------- FOOTER-HW-05  ---------- */
 /*---------- SUBSCRIBE ----------*/
+.box-subscribe {
+  margin-left: 80px;
+}
+
 .subscribe-title {
   color: #fff;
   font-size: 16px;
